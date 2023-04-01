@@ -37,17 +37,7 @@ return [
         'mongodb' => [
             'driver' => 'mongodb',
             'dsn' => env('DB_DSN'),
-            'host' => env('DB_HOST', ''),
-            'port' => env('DB_PORT', ''),
-            'database' => env('DB_DATABASE', ''),
-            'username' => env('DB_USERNAME', ''),
-            'password' => env('DB_PASSWORD', ''),
-            'options'  => [
-                'tls' => (bool) env('MONGO_TLS', true),
-                'authSource' => 'admin',
-                'db' => 'admin',
-                'database' => 'admin',
-            ],
+            'database' => env('DB_DATABASE', 'admin'),
         ],
         'sqlite' => [
             'driver' => 'sqlite',
