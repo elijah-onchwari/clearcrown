@@ -36,6 +36,7 @@ return [
     'connections' => [
         'mongodb' => [
             'driver' => 'mongodb',
+            'dsn' => env('DB_DSN'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 27017),
             'database' => env('DB_DATABASE', 'clearcrown'),
